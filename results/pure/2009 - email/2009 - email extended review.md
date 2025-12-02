@@ -1,0 +1,2 @@
+- FR-002 (Responder e-mail) deveria ter um valor maior, pois é uma central. Deveria ser 9 ao invés de 6.
+- FR-019 (Compartilhar inbox, calendário e arquivos) poderia ter um custo menor, pois não é algo tão complexo de implementar. Deveria ser 6 ao invés de 8.

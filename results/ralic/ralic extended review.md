@@ -1,4 +1,4 @@
-- Requisito FR-011, FR-021 e FR-021 foram duplicados;
+- Requisito FR-011, FR-021 e FR-049 foram duplicados;
 - 5 requisitos tiveram sua descrição como "1, 2, 3, 4, 5, 6, 7, 8, 9, 10"
 - Requisito FR-016 (Integrate Library Card Function) deveria ter valor 9, não 7.
 - Requisito FR-002 (Automatic Access Provisioning rights) deveria ter valor 9, não 3.
