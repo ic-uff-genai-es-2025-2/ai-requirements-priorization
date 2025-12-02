@@ -1,0 +1,1 @@
+The software described in the document is "Space Fractions," a web-based, interactive game designed as a learning tool to help sixth-grade students improve their fraction-solving skills. The system focuses entirely on input via mouse clicks and outputs sounds and animations through Flash movies.

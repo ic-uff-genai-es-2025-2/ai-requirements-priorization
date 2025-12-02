@@ -1,0 +1,22 @@
+Order,ID,Requirement,Cost,Risk,Value,Reasoning
+1,FR-001,The system must provide a singular Math Umbrella component accessible over the World Wide Web.,4,3,7,High value foundational component with moderate cost and risk; enables access to all learning modules.
+2,FR-004,The introductory movie component must terminate playback and forward the user to the Main Menu if a mouse click is received.,3,2,5,Low cost and risk, adds user control over the intro, quick win.
+3,FR-005,The introductory movie component must continue to completion and then move the user to the Main Menu if no mouse click is received.,3,2,5,Complementary to FR-004, ensures smooth user experience.
+4,FR-006,The system must display a Main Menu component.,3,2,5,Low cost and risk, essential for navigation.
+5,FR-007,The Main Menu component must wait until the user selects a button.,4,2,5,Dependent on FR-006, ensures user input before proceeding.
+6,FR-008,The Main Menu component must forward the user to the game sequence component or the Denominators' web page depending on the selected button.,3,3,5,Directs user flow; moderate cost and risk.
+7,FR-010,The Game Sequence component must display a question and wait until the user chooses an answer option via mouse click.,3,2,5,Low cost/risk, fundamental to gameplay interaction.
+8,FR-011,The Game Sequence component must display a success message and move to the next question if the user selects the correct answer.,3,2,5,Essential feedback loop; low cost and risk.
+9,FR-012,The Game Sequence component must inform the user of the incorrect answer and give them another chance to answer the question.,5,4,7,Enhances learning and user experience; moderate-high value despite higher cost.
+10,FR-009,The system must present a series of multiple-choice fraction questions that sequentially form a storyline.,6,8,9,High value core feature, drives educational outcomes; implement after lower-risk game mechanics.
+11,FR-013,The Game Sequence component must choose different plot directions at critical points based on whether the question was answered correctly.,5,8,9,High educational impact and engagement; complex but strategically important after core Q&A flow.
+12,FR-014,The system must direct the user to the Ending Scene component after proceeding through a set number of questions.,5,5,6,Critical for completing game sequence; moderate cost and risk.
+13,FR-015,The Ending Scene component must display the user's overall score.,3,3,6,Provides feedback and closure; low-moderate cost and risk.
+14,FR-016,The Ending Scene component must display a conclusion to the game's plot based on performance at certain critical points.,5,8,7,High engagement and personalization; implement after scoring is functional.
+15,FR-017,The Ending Scene component must offer the user the choice via mouse clicks to exit the game or return to the Main Menu.,3,2,4,Low cost/risk; enables user navigation post-game.
+16,FR-018,The system must provide a web-accessible Question Updater tool for a game administrator.,5,8,9,High strategic value for maintainability and content updates; high risk/cost so later in roadmap.
+17,FR-019,The Question Updater must utilize a web forms interface for input via pulldown menus and text fields.,5,4,7,Dependent on FR-018, ensures admin usability.
+18,FR-020,The Question Updater must check that the inputted question data is complete and makes sense in the context of the updated question after submission.,5,7,6,Validation critical for data integrity; implement after base updater interface.
+19,FR-021,The Question Updater must generate a text file on the game server.,5,7,6,Enables game to dynamically load updated questions; dependent on FR-018 and FR-019.
+20,FR-002,The Math Umbrella component must open the specified S2S product in a separate window.,4,5,3,Non-critical integration feature; moderate cost and high risk, lowest priority.
+22,FR-022,The user's score must be kept as local data within the game.,3,2,5,Simple, low-risk foundational feature; can be implemented early but after core gameplay setup.

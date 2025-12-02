@@ -1,0 +1,23 @@
+ID, Requirement, Description, Cost, Risk, Value, Reasoning
+"FR-001","The system must provide a singular Math Umbrella component accessible over the World Wide Web.","This component provides links to projects relating to fractions, decimals, and percents, organized by topic.",4,3,7
+"FR-002","The Math Umbrella component must open the specified S2S product in a separate window.","",4,5,3, "Explanation: **Cost (4)**: Opening a window involves some complexity with JavaScript and handling user interactions, which makes it moderately costly. **Risk (5)**: This feature is somewhat critical as it integrates with external products, but it's not as core to the main functionality of solving fractions. **Value (3)**: While it adds an extra layer of functionality, it's not directly tied to the core educational goal of improving fraction-solving skills."
+"FR-003","The system must play an introductory movie upon component entrance to set up the game storyline.","The movie provides background story and information to help the user complete the fraction questions.",5,4,7
+"FR-004","The introductory movie component must terminate playback and forward the user to the Main Menu if a mouse click is received.","The user has an option to skip the introduction.",3,2,5
+"FR-005","The introductory movie component must continue to completion and then move the user to the Main Menu if no mouse click is received.","nan",3,2,5
+"FR-006","The system must display a Main Menu component.","The menu includes a brief section offering help on playing the game, a link to the main game component, and a link to the Denominators' web page.",3,2,5
+"FR-007","The Main Menu component must wait until the user selects a button.","",4,2,5
+"FR-008","The Main Menu component must forward the user to the game sequence component or the Denominators' web page depending on the selected button.","nan",3,3,5
+"FR-009","The system must present a series of multiple-choice fraction questions that sequentially form a storyline.","Questions test arithmetic, equivalence, graphical interpretation, and improper versus proper fraction skills, and are plot-based.",6,8,9
+"FR-010","The Game Sequence component must display a question and wait until the user chooses an answer option via mouse click.","nan",3,2,5
+"FR-011","The Game Sequence component must display a success message and move to the next question if the user selects the correct answer.","nan",3,2,5
+"FR-012","The Game Sequence component must inform the user of the incorrect answer and give them another chance to answer the question.","If answered correctly on the second attempt, the question will not count as being answered correctly.",5,4,7
+"FR-013","The Game Sequence component must choose different plot directions at critical points based on whether the question was answered correctly.","The gameplay will be dynamic and adaptive.",5,8,9
+"FR-014","The system must direct the user to the Ending Scene component after proceeding through a set number of questions.","nan",5,5,6
+"FR-015","The Ending Scene component must display the user's overall score.","The score is calculated and ranked, and a customized message is given.",3,3,6
+"FR-016","The Ending Scene component must display a conclusion to the game's plot based on performance at certain critical points.","nan",5,8,7
+"FR-017","The Ending Scene component must offer the user the choice via mouse clicks to exit the game or return to the Main Menu.","The component will wait for user input and act accordingly.",3,2,4
+"FR-018","The system must provide a web-accessible Question Updater tool for a game administrator.","This component allows the series of fraction questions in the game sequence to be updated.",5,8,9
+"FR-019","The Question Updater must utilize a web forms interface for input via pulldown menus and text fields.","Each question will be updated on a separate page.",5,4,7
+"FR-020","The Question Updater must check that the inputted question data is complete and makes sense in the context of the updated question after submission.","nan",5,7,6
+"FR-021","The Question Updater must generate a text file on the game server.","This file is used by the game sequence to dynamically load question data.",5,7,6
+"FR-022","The user's score must be kept as local data within the game.","This allows the results to be given at the end of the game.",3,2,5
