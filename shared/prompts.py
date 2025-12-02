@@ -68,13 +68,14 @@ You will receive a list of functional requirements in CSV format containing:
    - Cost
    - Risk
    - Value
+   - Reasoning (OPTIONAL, may be empty)
 
 You also have the software description:
 {software_description}
 
 Your task:
 A. Analyze each requirement from a Product and Delivery perspective
-B. Create a **prioritized implementation roadmap** based on maximizing delivered value while minimizing risk and cost
+B. Create a prioritized implementation roadmap based on maximizing delivered value while minimizing risk and cost
 
 # Rules:
 1. Cost, Risk, and Value are numeric scales where:
@@ -82,21 +83,25 @@ B. Create a **prioritized implementation roadmap** based on maximizing delivered
    - Higher Risk = greater impact if delayed or failed
    - Higher Value = greater business/user impact
 
-2. Roadmap prioritization criteria:
-   - Highest priority = Highest Value with Lowest Cost and Lowest Risk
-   - Include strategic dependencies if they can be deduced from descriptions
-   - Avoid bunching too many high-risk items early in the roadmap
+2. Roadmap prioritization criteria (in order of decision):
+   a. Maximize Value
+   b. Minimize Cost when comparing items with similar value
+   c. Manage Risk strategically:
+      - High-risk items should only be prioritized early when they also provide high value or unblock other features
+      - Avoid clustering multiple high-risk items as the first milestones
+   d. Enforce dependencies:
+      - A requirement that enables others must appear earlier even if its score is lower
 
-3. Output format must be a **valid CSV** with these columns:
+3. Output format:
+   A valid CSV with the following columns:
    Order, ID, Requirement, Cost, Risk, Value, Reasoning
+   Always encapsulate text fields in double quotes.
 
 Where:
-   - "Order" = sequential number (1, 2, 3…)
-   - "Reasoning" = short justification based on risk, cost, value, and dependencies
+   - Order = sequential number (1, 2, 3…)
+   - Reasoning = concise justification referencing value/cost/risk tradeoffs and dependencies. If reasoning is not provided in input, generate it based on your analysis. If reasoning is provided, overwrite it.
 
 4. Do not repeat the input data
-5. No extra commentary outside the CSV
-6. Ensure final output can be parsed by a machine without cleaning
-
-If no valid requirements are found, output an empty CSV with a header only.
+5. No text outside the CSV (no commentary, no explanations)
+6. If no valid requirements are found, output an empty CSV with a header only
 """

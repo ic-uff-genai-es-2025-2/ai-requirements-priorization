@@ -1,113 +1,51 @@
-ID, Requirement, Description, Cost, Risk, Value
+ID, Requirement, Description, Cost, Risk, Value, Reasoning
 "FR-001","Support smart card technology for access control","System must be capable of interacting with smart card readers.",5,7,8
-"FR-002","Automatically provision access rights","nan",6,7,7
-"FR-003","Automatically suspend access rights","nan",8,9,7
-"FR-004","Automatically provision library borrowing rights","nan",6,8,7
-"FR-005","Automatically suspend library borrowing rights","nan",8,9,7
-"FR-006","Control access to library areas","nan",7,8,8
-"FR-007","Support new cards for use at the Bloomsbury Fitness Centre","nan",5,7,7
+"FR-002","Automatically provision access rights","",6,7,7
+"FR-003","Automatically suspend access rights","",8,9,7
+"FR-004","Automatically provision library borrowing rights","",6,8,7
+"FR-005","Automatically suspend library borrowing rights","",8,9,7
+"FR-006","Control access to library areas","",7,8,8
+"FR-007","Support new cards for use at the Bloomsbury Fitness Centre","",5,7,7
 "FR-008","Generate reports","Reports such as leavers' reports should be developed for Access Systems and Library staff",6,5,7
-"FR-009","Control access to departments","nan",6,7,7
-"FR-010","Control access to computer clusters","nan",7,8,7
-
-### Explanation:
-- **Cost (7)**: Controlling access to computer clusters involves integrating with the existing access control system, which likely requires custom development or integration work. This is moderately complex but not extremely so.
-- **Risk (8)**: Delaying or failing to control access to computer clusters could lead to security vulnerabilities and inconvenience to users, making it a high-risk requirement.
-- **Value (7)**: Ensuring secure and efficient access to computer clusters is important for both security and user convenience, making it a valuable feature. However, it is not the most critical aspect of the project.
-"FR-011","Display the PRN (student number) on the new card","1, 3, 2"
-
-"FR-011","Display the PRN (student number) on the new card", 2, 2, 3
-
-The cost is relatively low since it involves a simple UI update. The risk is moderate because the PRN is an important identifier, but it's not critical if delayed. The value is moderate as displaying the PRN can help with quick identification and user convenience.
-"FR-012","Display the card type and user status on the card","nan",3,2,5
-"FR-013","Support direct printing on both sides of the card","nan",3,2,4
-"FR-014","Use the same access control mechanism for library entrance","nan",5,7,8
-
-### Explanation:
-- **Cost (5)**: Implementing a new access control mechanism for the library involves changes to the system, but since it's a specific feature rather than a core system overhaul, it falls in the moderate range.
-- **Risk (7)**: Delaying this requirement could lead to confusion among users and inefficiencies in accessing the library, hence a moderate risk score.
-- **Value (8)**: This feature is essential for streamlining access and enhancing user experience, making it highly valuable.
-"FR-015","Integrate ID card and session card functions into one card","nan",8,9,9
-"FR-016","Integrate Library card function into one card","nan",6,8,9
-
-### Explanation:
-- **Cost (6):** Integrating the library card function into one card involves significant technical work, including modifying the card reader systems, updating databases, and ensuring compatibility with existing systems. This complexity makes it moderately high in cost.
-- **Risk (8):** Delaying or failing to integrate the library card function could disrupt the library services, causing inconvenience to a large number of users who rely on this service. Given the importance of library access, this has a high risk.
-- **Value (9):** This feature is highly valuable as it simplifies user experience and reduces the need for carrying multiple cards. It directly benefits a large user base and aligns with the project’s goal of streamlining access control.
-"FR-017","Integrate Bloomsbury fitness card function into one card","nan",7,8,9
-
-### Explanation:
-- **Cost (7)**: Integrating a new function into an existing system can be moderately complex, especially given the need to ensure compatibility with the existing access control system. This would likely require some development effort but is not extremely high.
-- **Risk (8)**: Delaying this feature could lead to inconvenience for users who rely on the fitness center, potentially impacting their ability to exercise regularly. Additionally, it could delay the overall consolidation of services, which is a key goal of the project. Thus, there is a significant risk involved.
-- **Value (9)**: This feature is highly valuable because it simplifies the user experience by combining multiple cards into one, reducing the burden on users and streamlining operations for the university. It directly supports the project’s objectives and enhances user convenience.
-"FR-018","Integrate Club and societies card function into one card","nan",7,7,8
-"FR-019","Integrate National Health Service (NHS) card function into one card","nan",8,9,7
-
-### Explanation:
-- **Cost (8)**: Integrating an additional function like the NHS card into the RALIC card is complex and involves integrating with another external system, making it a high-effort requirement.
-- **Risk (9)**: This integration is critical because it adds a significant feature that could impact user convenience and satisfaction. Delaying or failing to integrate this function could lead to frustration among users who rely on the NHS card for various services.
-- **Value (7)**: While valuable, this is not the most critical feature since it’s an additional service. However, it significantly enhances the utility of the RALIC card, making it a high-value feature.
-"FR-020","Track movement logs in buildings other than the library","nan",5,4,5
-"FR-021","Track movement logs in the library","1, 6, 5"
-
-FR-021,"The system must track movement logs in the library","1, 6, 5"
-
-Explanation:
-- **Cost (1)**: Tracking movement logs is a relatively simple feature, mainly involving database updates and logging, so it would not require a lot of development effort.
-- **Risk (6)**: While not critical, this feature could be important for security and compliance reasons, especially in a library setting where items might be misplaced or stolen. Delaying this could lead to issues with accountability and record-keeping.
-- **Value (5)**: This feature provides some value by improving security and management practices, but it is not as crucial as core functionalities like access control or user authentication.
-"FR-022","Enable the card to be used to mark attendance","nan",3,2,5
-"FR-023","Allow viewing and modification of access rights and time of access online without the physical card present","nan",8,9,7
-
-### Explanation:
-- **Cost (8):** Modifying access rights and time of access online is a significant feature that likely involves database updates, user interface changes, and possibly backend logic. This complexity suggests a medium to high cost.
-- **Risk (9):** Delaying or failing to implement this feature could lead to security issues and inconvenience for users who might need to manage their access remotely. Given its importance for security and user convenience, the risk is high.
-- **Value (7):** This feature enhances user flexibility and security, making it valuable but not the most critical aspect of the system. Therefore, it scores moderately high in value.
-"FR-024","Allow activation and inactivation of the card","nan",4,5,4
-
-### Explanation:
-- **Cost (4)**: This feature involves changes to the backend system to manage card states (active/inactive), which requires some development effort but is relatively straightforward compared to more complex features.
-- **Risk (5)**: While not critical, being able to activate and deactivate cards is important for security and user management. Delaying this could lead to issues with card usage and security.
-- **Value (4)**: This feature is useful but not as essential as some other core functionalities. It ensures proper management of card usage but doesn't directly provide significant user or business value.
-"FR-025","Implement a role-based method to grant access rights","nan",7,9,8
-"FR-026","Integrate with the Bloomsbury system (Gladstone MRM)","nan",6,7,8
-
-### Explanation:
-- **Cost (6):** Integrating with another system can involve significant technical work, especially given the complexity of the RALIC project and the number of stakeholders involved. This integration likely requires custom development and testing.
-- **Risk (7):** Delaying or failing to integrate with the Bloomsbury system could disrupt operations, particularly for facilities like the Gladstone MRM, which might rely on seamless integration for access control.
-- **Value (8):** The integration is crucial for ensuring that the new system works smoothly with existing infrastructure, enhancing user experience and operational efficiency. Given its importance, it has a high value score.
-"FR-027","Integrate with library systems","nan",7,9,8
-"FR-028","Handle compatibility with library barcodes","nan",5,4,7
+"FR-009","Control access to departments","",6,7,7
+"FR-010","Control access to computer clusters","",7,8,7,"Explanation:- **Cost (7)**: Controlling access to computer clusters involves integrating with the existing access control system, which likely requires custom development or integration work. This is moderately complex but not extremely so. - **Risk (8)**: Delaying or failing to control access to computer clusters could lead to security vulnerabilities and inconvenience to users, making it a high-risk requirement. - **Value (7)**: Ensuring secure and efficient access to computer clusters is important for both security and user convenience, making it a valuable feature. However, it is not the most critical aspect of the project."
+"FR-011","Display the PRN (student number) on the new card", "",2, 2, 3, "The cost is relatively low since it involves a simple UI update. The risk is moderate because the PRN is an important identifier, but it's not critical if delayed. The value is moderate as displaying the PRN can help with quick identification and user convenience."
+"FR-012","Display the card type and user status on the card","",3,2,5
+"FR-013","Support direct printing on both sides of the card","",3,2,4
+"FR-014","Use the same access control mechanism for library entrance","",5,7,8,"Explanation:- **Cost (5)**: Implementing a new access control mechanism for the library involves changes to the system, but since it's a specific feature rather than a core system overhaul, it falls in the moderate range. - **Risk (7)**: Delaying this requirement could lead to confusion among users and inefficiencies in accessing the library, hence a moderate risk score. - **Value (8)**: This feature is essential for streamlining access and enhancing user experience, making it highly valuable."
+"FR-015","Integrate ID card and session card functions into one card","",8,9,9
+"FR-016","Integrate Library card function into one card","",6,8,9,"Explanation:- **Cost (6):** Integrating the library card function into one card involves significant technical work, including modifying the card reader systems, updating databases, and ensuring compatibility with existing systems. This complexity makes it moderately high in cost. - **Risk (8):** Delaying or failing to integrate the library card function could disrupt the library services, causing inconvenience to a large number of users who rely on this service. Given the importance of library access, this has a high risk. - **Value (9):** This feature is highly valuable as it simplifies user experience and reduces the need for carrying multiple cards. It directly benefits a large user base and aligns with the project’s goal of streamlining access control."
+"FR-017","Integrate Bloomsbury fitness card function into one card","",7,8,9,"Explanation:- **Cost (7)**: Integrating a new function into an existing system can be moderately complex, especially given the need to ensure compatibility with the existing access control system. This would likely require some development effort but is not extremely high. - **Risk (8)**: Delaying this feature could lead to inconvenience for users who rely on the fitness center, potentially impacting their ability to exercise regularly. Additionally, it could delay the overall consolidation of services, which is a key goal of the project. Thus, there is a significant risk involved. - **Value (9)**: This feature is highly valuable because it simplifies the user experience by combining multiple cards into one, reducing the burden on users and streamlining operations for the university. It directly supports the project’s objectives and enhances user convenience."
+"FR-018","Integrate Club and societies card function into one card","",7,7,8
+"FR-019","Integrate National Health Service (NHS) card function into one card","",8,9,7,"Explanation:- **Cost (8)**: Integrating an additional function like the NHS card into the RALIC card is complex and involves integrating with another external system, making it a high-effort requirement. - **Risk (9)**: This integration is critical because it adds a significant feature that could impact user convenience and satisfaction. Delaying or failing to integrate this function could lead to frustration among users who rely on the NHS card for various services. - **Value (7)**: While valuable, this is not the most critical feature since it’s an additional service. However, it significantly enhances the utility of the RALIC card, making it a high-value feature."
+"FR-020","Track movement logs in buildings other than the library","",5,4,5
+FR-021,"The system must track movement logs in the library","",1,6,5,"Explanation: - **Cost (1)**: Tracking movement logs is a relatively simple feature, mainly involving database updates and logging, so it would not require a lot of development effort. - **Risk (6)**: While not critical, this feature could be important for security and compliance reasons, especially in a library setting where items might be misplaced or stolen. Delaying this could lead to issues with accountability and record-keeping. - **Value (5)**: This feature provides some value by improving security and management practices, but it is not as crucial as core functionalities like access control or user authentication."
+"FR-022","Enable the card to be used to mark attendance","",3,2,5
+"FR-023","Allow viewing and modification of access rights and time of access online without the physical card present","",8,9,7,"Explanation:- **Cost (8):** Modifying access rights and time of access online is a significant feature that likely involves database updates, user interface changes, and possibly backend logic. This complexity suggests a medium to high cost. - **Risk (9):** Delaying or failing to implement this feature could lead to security issues and inconvenience for users who might need to manage their access remotely. Given its importance for security and user convenience, the risk is high. - **Value (7):** This feature enhances user flexibility and security, making it valuable but not the most critical aspect of the system. Therefore, it scores moderately high in value."
+"FR-024","Allow activation and inactivation of the card","",4,5,4,"Explanation:- **Cost (4)**: This feature involves changes to the backend system to manage card states (active/inactive), which requires some development effort but is relatively straightforward compared to more complex features. - **Risk (5)**: While not critical, being able to activate and deactivate cards is important for security and user management. Delaying this could lead to issues with card usage and security. - **Value (4)**: This feature is useful but not as essential as some other core functionalities. It ensures proper management of card usage but doesn't directly provide significant user or business value."
+"FR-025","Implement a role-based method to grant access rights","",7,9,8
+"FR-026","Integrate with the Bloomsbury system (Gladstone MRM)","",6,7,8,"Explanation:- **Cost (6):** Integrating with another system can involve significant technical work, especially given the complexity of the RALIC project and the number of stakeholders involved. This integration likely requires custom development and testing. - **Risk (7):** Delaying or failing to integrate with the Bloomsbury system could disrupt operations, particularly for facilities like the Gladstone MRM, which might rely on seamless integration for access control. - **Value (8):** The integration is crucial for ensuring that the new system works smoothly with existing infrastructure, enhancing user experience and operational efficiency. Given its importance, it has a high value score."
+"FR-027","Integrate with library systems","",7,9,8
+"FR-028","Handle compatibility with library barcodes","",5,4,7
 "FR-029","Map user identity to UPI (UCL Person Identifier), including group memberships and roles",,8,9,8
-"FR-030","Export data to the student system","nan",6,7,7
+"FR-030","Export data to the student system","",6,7,7
 "FR-031","Export data to the library","Including access card changes, leavers, and barcode data.",6,5,7
-"FR-032","Export data to the staff system","nan",5,4,7
-"FR-033","Import data from staff and student systems","nan",6,7,7
-"FR-034","Import photo data from registry","nan",5,5,7
-"FR-035","Allow viewing of data from any computer","nan",5,4,7
-"FR-036","Allow updating/deleting of data remotely","nan",6,7,7
-"FR-037","Allow data entry","nan",5,4,5
-"FR-038","Support payment mechanism functionality","Can be used as a bank card or for cashless vending",5,4,7
-
-### Explanation:
-- **Cost (5):** Implementing a payment mechanism involves integrating with financial systems and ensuring security, which requires significant development effort.
-- **Risk (4):** While not critical, there could be issues with security and integration, but these are manageable and less severe compared to other core functionalities.
-- **Value (7):** This feature adds significant convenience and utility, enhancing the overall user experience and potentially increasing adoption of the card.
-"FR-039","Allow the card to be used for computer logon","nan",5,7,8
-"FR-040","Control access to Bloomsbury facilities","nan",6,7,7
-"FR-041","Control access to high hazard areas","nan",8,9,7
-"FR-042","Control access to Kathleen Lonsdale","nan",7,6,7
-"FR-043","Control access to private offices","nan",6,7,7
-"FR-044","Control access to rooms","nan",6,8,7
+"FR-032","Export data to the staff system","",5,4,7
+"FR-033","Import data from staff and student systems","",6,7,7
+"FR-034","Import photo data from registry","",5,5,7
+"FR-035","Allow viewing of data from any computer","",5,4,7
+"FR-036","Allow updating/deleting of data remotely","",6,7,7
+"FR-037","Allow data entry","",5,4,5
+"FR-038","Support payment mechanism functionality","Can be used as a bank card or for cashless vending",5,4,7,"Explanation:- **Cost (5):** Implementing a payment mechanism involves integrating with ficial systems and ensuring security, which requires significant development effort. - **Risk (4):** While not critical, there could be issues with security and integration, but these are manageable and less severe compared to other core functionalities. - **Value (7):** This feature adds significant convenience and utility, enhancing the overall user experience and potentially increasing adoption of the card."
+"FR-039","Allow the card to be used for computer logon","",5,7,8
+"FR-040","Control access to Bloomsbury facilities","",6,7,7
+"FR-041","Control access to high hazard areas","",8,9,7
+"FR-042","Control access to Kathleen Lonsdale","",7,6,7
+"FR-043","Control access to private offices","",6,7,7
+"FR-044","Control access to rooms","",6,8,7
 "FR-045","Enable photo visual checks","System must display the digital photo of the cardholder when the card is scanned",3,2,5
-"FR-046","Enable visual checking of the cardholder's role","nan",5,7,6
-"FR-047","Display name on the card","1, 2, 3, 4, 5, 6, 7, 8, 9, 10", 3, 2, 4
-
-### Explanation:
-- **Cost (3)**: Displaying the name on the card is a relatively simple UI feature and involves minimal backend changes.
-- **Risk (2)**: While not critical, it is important for user identification and convenience, but delays would not have a significant impact on the overall system functionality.
-- **Value (4)**: This feature adds a personal touch and enhances user experience, making it moderately valuable.
-"FR-048","Display photo on the card","nan",4,5,7
-"FR-049","Display UPI (UCL Person Identifier) on the card","1, 2, 3, 4, 5, 6, 7, 8, 9, 10"
+"FR-046","Enable visual checking of the cardholder's role","",5,7,6
+"FR-047","Display name on the card","", 3, 2, 4,"Explanation:- **Cost (3)**: Displaying the name on the card is a relatively simple UI feature and involves minimal backend changes. - **Risk (2)**: While not critical, it is important for user identification and convenience, but delays would not have a significant impact on the overall system functionality. - **Value (4)**: This feature adds a personal touch and enhances user experience, making it moderately valuable."
+"FR-048","Display photo on the card","",4,5,7
 "FR-049","Display UPI (UCL Person Identifier) on the card",7,3,8
-"FR-050","Enable security/reception staff to validate the cardholder's identity","nan",6,8,7
+"FR-050","Enable security/reception staff to validate the cardholder's identity","",6,8,7

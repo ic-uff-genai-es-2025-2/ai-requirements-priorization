@@ -1,4 +1,4 @@
-ID, Requirement, Description, Cost, Risk, Value, Reasoning
+ID,Requirement,Description,Cost,Risk,Value,Reasoning
 "FR-001","The system shall allow users to send, receive, and delete e-mail and attachments.","E-mail, Calendar, Contacts (Basic Functional Requirement)",5,6,8
 "FR-002","The system shall allow users to reply to e-mail and attachments.","E-mail, Calendar, Contacts (Basic Functional Requirement)", 4, 3, 6
 "FR-003","The system shall allow users to forward e-mail and attachments.","E-mail, Calendar, Contacts (Basic Functional Requirement)",3,2,7
